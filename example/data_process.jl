@@ -1,8 +1,10 @@
 using JLD   # 数据存取
 using Gadfly    # 绘图
 using DataFrames # 数据分类
-using Cairo
-using Statistics
+using Cairo # PDF保存
+using Statistics    # 计算置信区间
+
+# ]add JLD, Gadfly, DataFrames, Cairo, Statistics
 
 # 需要计算置信区间的函数
 function error_95(data)

@@ -4,6 +4,7 @@ on:
   - pull_request
 jobs:
   test:
+    ebv: CODECOV_TOKEN:"7f5b0f19-0167-46d2-ba61-d2bca7083cf1"
     name: Julia ${{ matrix.version }} - ${{ matrix.os }} - ${{ matrix.arch }} - ${{ github.event_name }}
     runs-on: ${{ matrix.os }}
     strategy:
@@ -14,6 +15,7 @@ jobs:
           - '1.6'
         os:
           - ubuntu-latest
+          - windows-latest
         arch:
           - x64
     steps:

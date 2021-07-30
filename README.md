@@ -8,9 +8,11 @@
 ```Julia
 ]add https://github.com/WeiMXi/MBL_ED.jl
 using MBL_ED
+# ]add JLD, Gadfly, DataFrames, Cairo, Statistics
 include("example/run.jl")
 include("example/data_process.jl")
 ```
+
 we can obtain:
 
 ![result](./example/fin_MBL_CPU.svg)
